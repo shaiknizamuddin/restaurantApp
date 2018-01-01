@@ -1,0 +1,54 @@
+<div class="container-fluid">
+    <div class="row ">
+        <div class="col-md-4 left-menu">
+            <form class="navbar-form navbar-left" role="search" (ngSubmit)="fetchRecord(data)">
+                <div class="form-group">
+                    <input type="text" [(ngModel)]="listFilter" name="listFilter" class="form-control filter-box" placeholder="Search Restaurants">
+                </div>
+            </form>
+            <div class="min-height">
+                Total : {{restaurant_count}}
+                <div class="card " *ngFor="let item of markers | customerFilter:listFilter">
+                    <ul class="list-group list-group-flush box-width">
+                        <li class="list-group-item licolor">
+                            <strong> Restaurant name :</strong>
+                            <span> {{ item.name }} </span>
+                        </li>
+                        <li class="list-group-item licolor">
+                            <strong>Rating:</strong>
+                            <code>{{item.rating}}</code>
+                        </li>
+                        <li class="list-group-item licolor">
+                            <strong>Address:</strong>
+                            <code>{{item.address}}</code>
+                        </li>
+                    </ul>
+                </div>
+                <h3 class="not-found" *ngIf="!restaurantsFound"> No restaurant for this location
+                    <span style="color:black">
+                        {{formatted_address}} </span>
+                </h3>
+            </div>
+        </div>
+        <div class="col-md-8">
+            <div class="container">
+                <h1 class="title">{{ title }}</h1>
+                <div class="form-group row">
+                    <div class="col-md-9">
+                        <input placeholder="search for location" autocorrect="on" autocapitalize="off" spellcheck="off" type="text" class="form-control" #search [formControl]="searchControl" size="100">
+                    </div>
+                    <!-- <div class="col-md-5">
+                        <button mat-button class="button" (click)="setCurrentPosition()">Use my Location</button>
+                    </div> -->
+                </div>
+                <!-- this creates a google map on the page with the given lat/lng from -->
+                <!-- the component as the initial center of the map: -->
+                <agm-map [latitude]="latitude" [longitude]="longitude" [zoom]="zoom" [disableDefaultUI]="true" [zoomControl]="true">
+                    <agm-marker *ngFor="let m of markers | customerFilter:listFilter; let i = index" [latitude]="m.latitude" [longitude]="m.longitude">
+                    </agm-marker>
+                </agm-map>
+                <!-- [label]="m.label" -->
+            </div>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,50 @@
+/* component css goes here */
+
+.btn-color {
+    background-color: #181819;
+    color: white;
+}
+
+.btn-align {
+    padding: 20px;
+    margin-left: 135px;
+}
+
+.login-box {
+    border: 1px;
+    background-color: white;
+    border-style: groove;
+    padding: 32px;
+    width: 550px;
+    left: 13%;
+    bottom: -123px;
+}
+
+.login-form {
+    padding-left: 8%;
+    padding-top: 23px;
+    margin-top: -12px;
+}
+
+.login-title {
+    padding-left: 40%;
+}
+
+.login-logo {
+    bottom: -89px;
+}
+
+.title {
+    color: #181819;
+    padding: 50px;
+}
+
+.bg {
+    background-image: url("../../assets/images/home_logo.png");
+    /* Full height */
+    height: 100%;
+    /* Center and scale the image nicely */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}

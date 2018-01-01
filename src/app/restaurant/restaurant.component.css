@@ -1,0 +1,59 @@
+/* component css goes here */
+
+.left-menu {
+    border-right: solid;
+    height: 620px;
+    overflow-y: scroll;
+}
+
+.title {
+    color: rgb(71, 71, 71);
+}
+
+.row-height {
+    margin-top: 50px;
+}
+
+.lists {
+    font-size: 22px;
+    padding: 3px;
+}
+
+agm-map {
+    height: 480px;
+    width: 845px;
+}
+
+.box-width {
+    width: 390px;
+}
+
+.min-height {
+    margin-top: 60px;
+}
+
+.filter-box {
+    width: 365px;
+}
+
+.not-found {
+    color: red;
+    font-size: 15px;
+}
+
+
+/* .button{
+    padding: 0px 10px;
+    text-align: center;
+    font-size: 16px;
+    margin: -4px 2px;
+    -webkit-transition-duration: 0.4s;
+    transition-duration: 0.4s;
+    cursor: pointer;
+     background-color: rgb(255, 255, 255);
+    border: 2px solid rgb(71, 71, 71);
+  }
+  .button:hover {
+    background-color: rgb(71, 71, 71);
+    color: rgb(255, 255, 255);
+} */
