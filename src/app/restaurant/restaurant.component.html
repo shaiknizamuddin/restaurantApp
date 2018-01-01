@@ -31,24 +31,21 @@
             </div>
         </div>
         <div class="col-md-8">
-            <div class="container">
-                <h1 class="title">{{ title }}</h1>
-                <div class="form-group row">
-                    <div class="col-md-9">
-                        <input placeholder="search for location" autocorrect="on" autocapitalize="off" spellcheck="off" type="text" class="form-control" #search [formControl]="searchControl" size="100">
-                    </div>
-                    <!-- <div class="col-md-5">
-                        <button mat-button class="button" (click)="setCurrentPosition()">Use my Location</button>
-                    </div> -->
+            <h1 class="title">{{ title }}</h1>
+            <div class="form-group row">
+                <div class="col-md-12">
+                    <input placeholder="search for location" autocorrect="on" autocapitalize="off" spellcheck="off" type="text" class="form-control" #search [formControl]="searchControl" size="100">
                 </div>
-                <!-- this creates a google map on the page with the given lat/lng from -->
-                <!-- the component as the initial center of the map: -->
-                <agm-map [latitude]="latitude" [longitude]="longitude" [zoom]="zoom" [disableDefaultUI]="true" [zoomControl]="true">
-                    <agm-marker *ngFor="let m of markers | customerFilter:listFilter; let i = index" [latitude]="m.latitude" [longitude]="m.longitude">
-                    </agm-marker>
-                </agm-map>
-                <!-- [label]="m.label" -->
+                <!-- <div class="col-md-5">
+                      <button mat-button class="button" (click)="setCurrentPosition()">Use my Location</button>
+                  </div> -->
             </div>
+            <!-- this creates a google map on the page with the given lat/lng from -->
+            <!-- the component as the initial center of the map: -->
+            <agm-map [latitude]="latitude" [longitude]="longitude" [zoom]="zoom" [disableDefaultUI]="true" [zoomControl]="true">
+                <agm-marker *ngFor="let m of markers | customerFilter:listFilter; let i = index" [latitude]="m.latitude" [longitude]="m.longitude">
+                </agm-marker>
+            </agm-map>
+            <!-- [label]="m.label" -->
         </div>
     </div>
-</div>

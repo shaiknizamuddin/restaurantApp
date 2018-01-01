@@ -13,7 +13,7 @@ export class LoginComponent {
     constructor(private _router: Router) { }
     onLogin(value: any): void {
         console.log(value);
-        if (value.user_name == "11" && value.password == "11") {
+        if (value.user_name == "user" && value.password == "user123") {
             this._router.navigateByUrl('/restaurants');
         } else {
             alert("Invalid Login Details ,use\nUserName : user Password: user123");
