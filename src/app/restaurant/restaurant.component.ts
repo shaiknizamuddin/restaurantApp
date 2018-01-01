@@ -41,7 +41,7 @@ export class RestaurantComponent implements OnInit {
 
   ngOnInit() {
     this.title = "Nearby Restaurants";
-    //  set google maps defaults Bangalore is a Current Location
+    //  set google maps defaults Nellore is a Current Location
     this.zoom = 15;
     this.latitude = 14.4425987;
     this.longitude = 79.98645599999998;
