@@ -35,4 +35,4 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
   User can also filter the available restaurants form the left pane search box. Based on the filtered result only the filtered restaurants will be displayed on the Google Map.
 
 
-<b>[ Note ] : If you do not get the restaurants list, please check `CORS` enabled or try reinstalling it.</b>
+<b>[ Note ] : If you do not get the restaurants list, please check `CORS` enabled on your browser or try reinstalling it.</b>

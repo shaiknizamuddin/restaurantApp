@@ -12,7 +12,6 @@ export class LoginComponent {
     password: String;
     constructor(private _router: Router) { }
     onLogin(value: any): void {
-        console.log(value);
         if (value.user_name == "user" && value.password == "user123") {
             this._router.navigateByUrl('/restaurants');
         } else {

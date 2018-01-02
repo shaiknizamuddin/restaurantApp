@@ -24,7 +24,7 @@
                         </li>
                     </ul>
                 </div>
-                <h3 class="not-found" *ngIf="!restaurantsFound"> No restaurant for this location
+                <h3 class="not-found" *ngIf="!restaurantsFound"> No restaurants for this location
                     <span style="color:black">
                         {{formatted_address}} </span>
                 </h3>
@@ -36,9 +36,6 @@
                 <div class="col-md-12">
                     <input placeholder="search for location" autocorrect="on" autocapitalize="off" spellcheck="off" type="text" class="form-control" #search [formControl]="searchControl" size="100">
                 </div>
-                <!-- <div class="col-md-5">
-                      <button mat-button class="button" (click)="setCurrentPosition()">Use my Location</button>
-                  </div> -->
             </div>
             <!-- this creates a google map on the page with the given lat/lng from -->
             <agm-map [latitude]="latitude" [longitude]="longitude" [zoom]="zoom" [disableDefaultUI]="true" [zoomControl]="true">

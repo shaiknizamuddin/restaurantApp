@@ -41,10 +41,10 @@ export class RestaurantComponent implements OnInit {
 
   ngOnInit() {
     this.title = "Nearby Restaurants";
-    //  set google maps defaults Nellore is a Current Location
+    //  set google maps defaults Banglore is a Current Location
     this.zoom = 15;
-    this.latitude = 14.4425987;
-    this.longitude = 79.98645599999998;
+    this.latitude = 12.972442;
+    this.longitude = 77.580643;
     // api call for restaurants
     this.getRestaurantsApi(this.latitude, this.longitude);
     // create search FormControl
@@ -82,6 +82,7 @@ export class RestaurantComponent implements OnInit {
       navigator.geolocation.getCurrentPosition(position => {
         this.latitude = position.coords.latitude;
         this.longitude = position.coords.longitude;
+        // console.log(this.latitude, this.longitude);
         // call service after fetching current location
         this.getRestaurantsApi(this.latitude, this.longitude);
       });

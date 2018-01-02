@@ -2,7 +2,7 @@
 
 .left-menu {
     border-right: solid;
-    height: 620px;
+    height: 640px;
     overflow-y: scroll;
 }
 
@@ -40,20 +40,3 @@ agm-map {
     color: red;
     font-size: 15px;
 }
-
-
-/* .button{
-    padding: 0px 10px;
-    text-align: center;
-    font-size: 16px;
-    margin: -4px 2px;
-    -webkit-transition-duration: 0.4s;
-    transition-duration: 0.4s;
-    cursor: pointer;
-     background-color: rgb(255, 255, 255);
-    border: 2px solid rgb(71, 71, 71);
-  }
-  .button:hover {
-    background-color: rgb(71, 71, 71);
-    color: rgb(255, 255, 255);
-} */
