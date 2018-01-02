@@ -2,6 +2,8 @@
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.6.3.
 
+This app is built based on the latest version of angular , which is V5 .
+
 ## Table of Contents
 1. Login
 2. Restaurant locator
