@@ -34,5 +34,7 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
 
   User can also filter the available restaurants form the left pane search box. Based on the filtered result only the filtered restaurants will be displayed on the Google Map.
 
+  User can get a maximum of 20 search results around his 500 meters radius.
+
 
 <b>[ Note ] : If you do not get the restaurants list, please check `CORS` enabled on your browser or try reinstalling it.</b>
